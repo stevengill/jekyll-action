@@ -17,10 +17,9 @@ jobs:
     - name: Run with jekyll_src
       uses: ./
       with: 
-        jekyll_src: docs
+        jekyll_src: 'docs'
       env:
         JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
-        JEKYLL_DEBUG: ${{ secrets.ACTIONS_STEP_DEBUG }}
 #     - name: Run with jekyll_src and gem_src
 #       uses: ./
 #       with: 
